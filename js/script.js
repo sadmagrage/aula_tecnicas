@@ -26,3 +26,7 @@ RIGHT_ICON.addEventListener("click", () => {
 NAV.innerHTML = () => {
     return "aa";
 }
+
+fetch("https://tryingrailway-production.up.railway.app/db")
+    .then(response => response.json())
+    .then(data =>  console.log(data));
