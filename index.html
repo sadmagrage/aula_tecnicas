@@ -49,6 +49,11 @@
           </div>
         </div>
     </div>
+    <script>
+        fetch("https://tryingrailway-production.up.railway.app/db")
+            .then(response => response.json())
+            .then(data =>  console.log(data));
+    </script>
     <script type="module" src="./js/script.js"></script>
 </body>
 </html>
