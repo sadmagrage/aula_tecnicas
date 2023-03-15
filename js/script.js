@@ -23,10 +23,6 @@ RIGHT_ICON.addEventListener("click", () => {
     // (displayRes === 'none') ? setDisplayRes('flex') : setDisplayRes('none');
 });
 
-NAV.innerHTML = () => {
-    return "aa";
-}
-
 (async () => {
 await fetch("https://tryingrailway-production.up.railway.app/db")
     .then(response => response.json())
