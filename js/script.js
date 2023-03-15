@@ -27,6 +27,8 @@ NAV.innerHTML = () => {
     return "aa";
 }
 
-fetch("https://tryingrailway-production.up.railway.app/db")
+(async () => {
+await fetch("https://tryingrailway-production.up.railway.app/db")
     .then(response => response.json())
     .then(data =>  console.log(data));
+})();
